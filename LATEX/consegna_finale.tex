@@ -1,0 +1,77 @@
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\linespread{1.2} % Line spacing
+\graphicspath{{img/}} % Specifies the directory where pictures are stored
+\usepackage{amssymb}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\LARGE Universita di Trento}\\[1.5cm] % Name of your university/college
+\textsc{\Large Corso HCI A.A. 2014-2015}\\[0.5cm] % Major heading such as course name
+\textsc{\large Partecipatory Development}\\[0.5cm] % Minor heading such as course title
+
+\HRule \\[0.8cm]
+{ \huge \bfseries Gestione delle labels di Github}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\begin{tabular}{ll}
+Bortoli \textsc{Gianluca} & \makebox[2cm][r]{159993} \\
+Brugnara \textsc{Martin} & \makebox[2cm][r]{157791} \\
+Dellera \textsc{Andrea} & \makebox[2cm][r]{11111} \\
+Hoxha \textsc{Fatbardha} & \makebox[2cm][r]{161003}
+\end{tabular}
+\end{flushleft}
+\end{minipage}
+
+\vfill % Fill the rest of the page with whitespace
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+\section{Introduzione}
+Il primo obiettivo di questo progetto consiste nell'analizzare e quali siano le principali barriere nella partecipazione ai progetti open source, che oggigiorno sono diventati sempre piu numerosi e di una certa rilevanza (addirittura mondiale in alcuni casi).\\
+Il nostro interesse e ricaduto proprio in queste probematiche che affliggono questo tipo di progetti, dal momento che le abbiamo ravvisate anche in prima persona durante i nostri studi. \\
+Questo approfondimento deriva in parte anche dalla nostra propensione ed interesse per l'utilizzo di software open source durante la nostra carriera universitaria e lavorativa.\\
+Lo scopo finale e quello di trovare e formulare una possibile soluzione al problema della gestione delle etichette su Github (la piattaforma principe per lo sviluppo open source), dal momento che essa e attualmente molto confusionaria e poco ben gestita, soprattutto in progetti di una certa complessita e grandezza.
+
+\section{Interviste}
+Il primo passo per l'individuazione delle principali problematiche legate all'ambito della partecipazione ai progetti open source e stata fatta tramite delle interviste. Questo tipo di ricerca si presta molto alla vautazione di barriere di questo tipo, dal momento che l'intervistato non si sente limitato nelle risposte (come potrebbe risultare da un questionario a risposta multipla), ma al contempo non ha la percezione di dilungarsi troppo (come invece potrebbe succedere se viene presentato un questionario a domanda aperta) che lo spingerebbe a non scrivere tutto cio che pensa. \\
+Con il tramite dell'intervista "faccia a faccia" questi inconvenienti vengono meno: la persona si sente piu libera di parlare con l'intervistatore che pone le domande, ma al contempo non interrompe l'intervistato mentre sta rispondendo per non interrompere il flusso delle idee (che e il fulcro di tutto).\\
+\subsection{Traccia}
+La traccia delle domande da porre all'intervistato ci e stata fornita direttamente dalla dottoressa Bordin, poiche tale argomento non era ancora stato trattato a lezione nel momento in cui abbiamo svolto questa parte del progetto.\\
+Essa prevedeva delle domande mirate principalmente a capire:
+\begin{itemize}
+\item se e quali software open source vengono utilizzati
+\item se l'intervistato partecipi/abbia partecipato attivamente a tali progetti
+\item quali siano le motivazioni che lo hanno portato a farlo oppure no
+\item cosa significhi \emph{partecipare} ad un progetto open source
+%-----------------------------------------------------
+% aggiungere link documento traccia bordin 
+% http://disi.unitn.it/~deangeli/homepage/lib/exe/fetch.php?media=teaching:hci:hci2014_2015:intervista_pd_motivazioni.pdf
+%-----------------------------------------------------
+\end{itemize}
+
+
+
+\end{document}
