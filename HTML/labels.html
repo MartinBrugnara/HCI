@@ -90,7 +90,6 @@ li.cat.c_d .label.label-link {background-color: #15c958; color: #333333;}
       border-left: 1px solid #E5E5E5;
             border-right: 1px solid #e5e5e5;
 }
-
     </style>
 
   </head>
@@ -379,7 +378,7 @@ li.cat.c_d .label.label-link {background-color: #15c958; color: #333333;}
                     <!-- cat -->
                     <li class="table-list-item labels-list-item js-details-container cat c_a">
                       <div class="table-list-cell">
-                        <span class="label-description right">2 open issues</span>
+                        <span class="label-description right"></span>
                         <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/status" class="label-name">Status</span>
@@ -433,7 +432,7 @@ li.cat.c_d .label.label-link {background-color: #15c958; color: #333333;}
                     <!-- cat -->
                     <li class="table-list-item labels-list-item js-details-container cat c_b">
                       <div class="table-list-cell">
-                        <span class="label-description right">2 open issues</span>
+                        <span class="label-description right"></span>
                         <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/platform" class="label-name">Platform</span>
@@ -497,7 +496,7 @@ li.cat.c_d .label.label-link {background-color: #15c958; color: #333333;}
                     <!-- cat -->
                     <li class="table-list-item labels-list-item js-details-container cat c_c">
                       <div class="table-list-cell">
-                        <span class="label-description right">2 open issues</span>
+                        <span class="label-description right"></span>
                         <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/plugin" class="label-name">Plugin</span>
@@ -551,7 +550,7 @@ li.cat.c_d .label.label-link {background-color: #15c958; color: #333333;}
                     <!-- cat -->
                     <li class="table-list-item labels-list-item js-details-container cat c_d">
                       <div class="table-list-cell">
-                        <span class="label-description right">2 open issues</span>
+                        <span class="label-description right"></span>
                         <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/difficulty" class="label-name">Difficulty</span>
@@ -684,6 +683,16 @@ li.cat.c_d .label.label-link {background-color: #15c958; color: #333333;}
       $(function(){
         /* Dirty hack: disable all links (do not go out of demo) */
         $('a').click(function(e){e.preventDefault();return false;});
+
+        /* Update total open issue */
+        $('.cat').each(function(i,e){
+          $(e).children('.table-list-cell').find('.label-description').html(
+            $(e).find('.sub-labels .label-description')
+            .map(function(_, item) {return parseInt($(item).text(), 10) || 0;})
+            .toArray()
+            .reduce(function(a,b) {return a + b;})
+          + " open issue");
+        });
 
         /* Toggle ev */
         $('.toggler').click(function(e){
