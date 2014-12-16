@@ -115,6 +115,8 @@ Al contrario, altrettanti sono i motivi che spingono le persone a non contribuir
 \section{Design library: NeoVim}
 Nella nostra \emph{design library} ci siamo concentrati sul progetto di NeoVim per poter individuare sia degli esempi di cattiva e che di buona progettazione da cui prendere spunto.\\
 \subsection{Buoni esempi}
+Facciamo ora una lista degli esempi più significativi di un design pensato e studiato appositamente per far s\iì che l'utente interessato a partecipare riesca a farlo nel modo migliore possibile.\\
+Abbiamo notato come sia il sito di NeoVim che la gestione della codebase su Github siano state progettate secondo il paradigma dell'\emph{user driven design}, il quale mira massimizzare l'usabilit\'a del prodotto.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.8\linewidth]{buonesempio1.png}}
@@ -143,24 +145,34 @@ Infine, viene posta molta cura nella documentazione e nei commenti all'interno d
 Inoltre, alla nascita di NeoVim sono state decise delle linee guida ben precise su come si dovesse indentare/organizzare il codice e soprattutto su come commentarlo, in modo da non creare disomogeneit\'a all'interno del progetto (il che creerebbe non pochi problemi di comprensione).
 
 \subsection{Cattivi esempi}
+Al contrario, abbiamo individuato delle parti che risultavano di difficile comprensione e che potevano creare dei problemi con chi volesse interagire.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.65\linewidth]{cattivoesempio1.png}}
-\caption{Homepage di NeoVim.}
+\caption{Etichette assegnate alle issue su Github.}
 \label{fig:cattivoesempio1}
 \end{figure}
 
+Dalla Figura \ref{fig:cattivoesempio1} già ad un primo impatto si può notare come le etichette assegnate alle issue ancora da risolvere siano poco esplicative e, a volte, ridondanti.\\
+Questo crea molta confusione nel momento in cui lo sviluppatore che vuole dare il proprio contributo controlla cosa ci sia da fare e/o correggere, trovandosi davanti una miriade di labels con i colori più disparati e visualizzate in modo disorganizzato e con poca coerenza.
+
 \begin{figure}[H] 
 \center{\includegraphics[width=0.4\linewidth]{cattivoesempio2.png}}
-\caption{Homepage di NeoVim.}
+\caption{Menu per la selezione delle labels.}
 \label{fig:cattivoesempio2}
 \end{figure}
+
+Quello della coerenza e dei colori diventa ancora di più un problema nel momento in cui si vuole filtrare tutte le issue per labels.\\
+A colori molto simili, talvolta identici tra loro, sono associate delle problematiche e delle aree di lavoro molto differenti tra loro. Come si pu\`o vedere dalla Figura \ref{fig:cattivoesempio2}, le voci \emph{licence} e \emph{package manager} hanno una colorazione quasi indistinguibile, nonostante riguardino due ambiti molto diversi.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.8\linewidth]{cattivoesempio3.png}}
 \caption{Homepage di NeoVim.}
 \label{fig:cattivoesempio3}
 \end{figure}
+
+Il problema si estende anche a \emph{Waffle} \footnote{\url{www.waffle.io}}, un tool che permette di gestire in modo più comodo ed immediato le issues di Github in real time. Grazie a questo software direttamente collegato a Github non c'è la necessit\`a di controllare manualmente lo stato del lavoro, bensì il flusso del lavoro viene direttamente organizzato in base ai commit e alle issue a cui fanno riferimento.\\
+
 
 \section{Prototipi}
 
