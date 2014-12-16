@@ -71,7 +71,7 @@ Essa prevedeva delle domande mirate principalmente a capire:
 \item cosa significhi \emph{partecipare} ad un progetto open source
 \end{itemize}
 \subsection{Analisi dei risultati}
-Il campione su cui è stata effettuata l'intervista non è molto eterogeneo (come è possibile vedere dalla Figura \ref{fig:distribuzione}), dal momento che è stato più immediato intervistare delle persone all'interno del nostro corso di laurea piuttosto che di altri atenei o dei lavoratori.
+Il campione su cui è stata effettuata l'intervista non è molto eterogeneo (come è possibile vedere dalla \ \ref{fig:distribuzione}), dal momento che è stato più immediato intervistare delle persone all'interno del nostro corso di laurea piuttosto che di altri atenei o dei lavoratori.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.8\linewidth]{interviewed_distribution.png}}
@@ -122,15 +122,51 @@ Nella nostra \emph{design library} ci siamo concentrati sul progetto di NeoVim p
 \label{fig:buonesempio1}
 \end{figure}
 
-Si può già notare come il gruppo principale di sviluppo del progetto preso in considerazione indichi chiaramente già nella pagina principale una sezione per chi volesse sviluppare.
+Dalla Figura \ref{fig:buonesempio1} si pu\'o notare come il gruppo di sviluppo del progetto preso in considerazione indichi chiaramente nella pagina principale una sezione per chi volesse contribuire. Già da questo possiamo capire come si punti sullo sviluppo di terze persone: per questo motivo il link al codice sorgente del software su Github viene messo nel menu principale, in modo che sia di facile reperibilità.
+
+\begin{figure}[H] 
+\center{\includegraphics[width=0.65\linewidth]{buonesempio2.png}}
+\caption{Cosa c'è da fare.}
+\label{fig:buonesempio2}
+\end{figure}
+
+Un altro dei problemi riscontrati durante la fase di benchmarking è quello di non ritenere le proprie capacità sufficienti per dare il proprio contributo. Ciò è stato parzialmente risolto (Figura \ref{fig:buonesempio2}) introducendo dei \emph{livelli di difficoltà} per le issues/bug presenti nel software.\\
+\'E stato introdotta un'etichetta per i problemi di più facile risoluzione (entry level), cosa che non avevamo notato in qualsiasi altro progetto da noi preso in considerazione.
+
+\begin{figure}[H] 
+\center{\includegraphics[width=0.65\linewidth]{buonesempio3.png}}
+\caption{Homepage di NeoVim.}
+\label{fig:buonesempio3}
+\end{figure}
+
+Infine, viene posta molta cura nella documentazione e nei commenti all'interno del codice. Ciò aiuta chi interviene in quella porzione di sorgente per poter capire meglio e senza eccessiva difficolt\'a cosa faccia una certa porzione di codice.\\
+Inoltre, alla nascita di NeoVim sono state decise delle linee guida ben precise su come si dovesse indentare/organizzare il codice e soprattutto su come commentarlo, in modo da non creare disomogeneità all'interno del progetto (il che creerebbe non pochi problemi di comprensione).
 
 \subsection{Cattivi esempi}
+
+\begin{figure}[H] 
+\center{\includegraphics[width=0.65\linewidth]{cattivoesempio1.png}}
+\caption{Homepage di NeoVim.}
+\label{fig:cattivoesempio1}
+\end{figure}
+
+\begin{figure}[H] 
+\center{\includegraphics[width=0.4\linewidth]{cattivoesempio2.png}}
+\caption{Homepage di NeoVim.}
+\label{fig:cattivoesempio2}
+\end{figure}
+
+\begin{figure}[H] 
+\center{\includegraphics[width=0.8\linewidth]{cattivoesempio3.png}}
+\caption{Homepage di NeoVim.}
+\label{fig:cattivoesempio3}
+\end{figure}
 
 \section{Prototipo a bassa fedeltà}
 Per migliorare il problema delle label, analizzato precedentemente, abbiamo realizzato un prototipo a bassa fedeltà tramite \emph{balsamiq}.
 Le label che fanno riferimento a problemi della stessa area vengono raggruppate in una singola macro-label, espandibile con un click. L'idea originale era di implementare il design pattern file-cartella poi, dopo averci riflettuto, abbiamo deciso di fermarci ad un primo livello. Ciò significa che se una label appartiene ad una macro-label non può avere delle sotto-label.
 Questo, per quanto intuitivamente possa sembrare una limitazione, aiuta a mantenere la semplicità e la praticità delle label.
-\includepdf[pages={1}]{../BALSAMIQ/low-prototipe.pdf}
+\includepdf[pages={1}]{../BALSAMIQ/low_prototipe.pdf}
 
 \end{document}
 
