@@ -73,13 +73,24 @@ ul.sub-labels li:last-child div.table-list-cell::before {
 
 li.cat > div > span.label-link * {
   text-decoration: none !important;
-  color: #333;
+  color: inherit;
 }
 
 li.cat > div > span.label-link .toggler::before {content: "\25b7";}
 li.cat.op > div > span.label-link .toggler::before {content: "\25bd";}
 li.cat > ul.sub-labels {display: none;}
 li.cat.op > ul.sub-labels {display: block;}
+
+li.cat.c_a .label.label-link {background-color: #cccccc; color: #333333;}
+li.cat.c_b .label.label-link {background-color: #ff421b; color: #eee;}
+li.cat.c_c .label.label-link {background-color: #ffb31b; color: #333333;}
+li.cat.c_d .label.label-link {background-color: #15c958; color: #333333;}
+
+.table-list-bordered .table-list-cell:first-child {
+      border-left: 1px solid #E5E5E5;
+            border-right: 1px solid #e5e5e5;
+}
+
     </style>
 
   </head>
@@ -366,10 +377,10 @@ li.cat.op > ul.sub-labels {display: block;}
                   <ul class="table-list table-list-bordered">
 
                     <!-- cat -->
-                    <li class="table-list-item labels-list-item js-details-container cat">
+                    <li class="table-list-item labels-list-item js-details-container cat c_a">
                       <div class="table-list-cell">
                         <span class="label-description right">2 open issues</span>
-                        <span class="label label-link"  style="background-color: #ededed; color: #333333; ">
+                        <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/status" class="label-name">Status</span>
                         </a>
@@ -379,7 +390,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/RDY" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/RDY" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">RDY</span>
                             </a>
@@ -389,7 +400,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/RFC" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/RFC" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">RFC</span>
                             </a>
@@ -399,7 +410,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/WIP" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/WIP" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">WIP</span>
                             </a>
@@ -409,7 +420,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/wont_fix" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/wont_fix" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Wont Fix</span>
                             </a>
@@ -420,10 +431,10 @@ li.cat.op > ul.sub-labels {display: block;}
                     <!-- end cat -->
 
                     <!-- cat -->
-                    <li class="table-list-item labels-list-item js-details-container cat">
+                    <li class="table-list-item labels-list-item js-details-container cat c_b">
                       <div class="table-list-cell">
                         <span class="label-description right">2 open issues</span>
-                        <span class="label label-link"  style="background-color: #ededed; color: #333333; ">
+                        <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/platform" class="label-name">Platform</span>
                         </a>
@@ -433,7 +444,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/cygwin" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/cygwin" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Cygwin</span>
                             </a>
@@ -443,7 +454,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/freebsd" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/freebsd" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">freebsd</span>
                             </a>
@@ -453,7 +464,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/mingw" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/mingw" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Mingw</span>
                             </a>
@@ -463,7 +474,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/osx" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/osx" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">OSx</span>
                             </a>
@@ -473,7 +484,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/windows" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/windows" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Windows</span>
                             </a>
@@ -484,10 +495,10 @@ li.cat.op > ul.sub-labels {display: block;}
                     <!-- end cat -->
 
                     <!-- cat -->
-                    <li class="table-list-item labels-list-item js-details-container cat">
+                    <li class="table-list-item labels-list-item js-details-container cat c_c">
                       <div class="table-list-cell">
                         <span class="label-description right">2 open issues</span>
-                        <span class="label label-link"  style="background-color: #ededed; color: #333333; ">
+                        <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/plugin" class="label-name">Plugin</span>
                         </a>
@@ -497,7 +508,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/pkgman" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/pkgman" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Package Manager</span>
                             </a>
@@ -507,7 +518,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/pgman" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/pgman" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Plug-in Manager</span>
                             </a>
@@ -517,7 +528,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/plugin" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/plugin" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Plug-in</span>
                             </a>
@@ -527,7 +538,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/providers" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/providers" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">providers</span>
                             </a>
@@ -538,10 +549,10 @@ li.cat.op > ul.sub-labels {display: block;}
                     <!-- end cat -->
 
                     <!-- cat -->
-                    <li class="table-list-item labels-list-item js-details-container cat">
+                    <li class="table-list-item labels-list-item js-details-container cat c_d">
                       <div class="table-list-cell">
                         <span class="label-description right">2 open issues</span>
-                        <span class="label label-link"  style="background-color: #ededed; color: #333333; ">
+                        <span class="label label-link"  >
                           <a href="#" class="toggler"></a>
                           <a href="/neovim/neovim/labels/difficulty" class="label-name">Difficulty</span>
                         </a>
@@ -551,7 +562,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/entry" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/entry" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Entry Level</span>
                             </a>
@@ -561,7 +572,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/medium" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/medium" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Medium</span>
                             </a>
@@ -571,7 +582,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/hard" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/hard" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Hard</span>
                             </a>
@@ -581,7 +592,7 @@ li.cat.op > ul.sub-labels {display: block;}
                         <li class="table-list-item labels-list-item js-details-container">
                           <div class="table-list-cell">
                             <span class="label-description right">2 open issues</span>
-                            <a class="label label-link" href="/neovim/neovim/labels/wont_fix" style="background-color: #ededed; color: #333333; ">
+                            <a class="label label-link" href="/neovim/neovim/labels/wont_fix" >
                               <span class="octicon octicon-tag"></span>
                               <span class="label-name">Wont Fix</span>
                             </a>
@@ -590,11 +601,6 @@ li.cat.op > ul.sub-labels {display: block;}
                       </ul>
                     </li>
                     <!-- end cat -->
-
-
-
-
-
                   </ul>
                   <!-- END LABEL LIST -->
                 </div>
