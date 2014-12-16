@@ -5,6 +5,7 @@
 \usepackage{wrapfig} % Allows in-line images such as the example fish picture
 \usepackage{amssymb}
 \usepackage{url}
+\usepackage{pdfpages}
 \geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
 \graphicspath{{graphs/}{img/}} % Specifies the directory where pictures are stored
 \linespread{1.2} % Line spacing
@@ -117,13 +118,19 @@ Nella nostra \emph{design library} ci siamo concentrati sul progetto di NeoVim p
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.8\linewidth]{buonesempio1.png}}
-\caption{La homepage del sito di NeoVim indica chiaramente una sezione per chi volesse sviluppare.}
+\caption{Homepage di NeoVim.}
 \label{fig:buonesempio1}
 \end{figure}
 
 Si può già notare come il gruppo principale di sviluppo del progetto preso in considerazione indichi chiaramente già nella pagina principale una sezione per chi volesse sviluppare.
 
 \subsection{Cattivi esempi}
+
+\section{Prototipo a bassa fedeltà}
+Per migliorare il problema delle label, analizzato precedentemente, abbiamo realizzato un prototipo a bassa fedeltà tramite \emph{balsamiq}.
+Le label che fanno riferimento a problemi della stessa area vengono raggruppate in una singola macro-label, espandibile con un click. L'idea originale era di implementare il design pattern file-cartella poi, dopo averci riflettuto, abbiamo deciso di fermarci ad un primo livello. Ciò significa che se una label appartiene ad una macro-label non può avere delle sotto-label.
+Questo, per quanto intuitivamente possa sembrare una limitazione, aiuta a mantenere la semplicità e la praticità delle label.
+\includepdf[pages={1}]{../BALSAMIQ/low-prototipe.pdf}
 
 \end{document}
 
