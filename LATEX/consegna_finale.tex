@@ -159,7 +159,7 @@ Al contrario, abbiamo individuato delle parti che risultavano di difficile compr
 \label{fig:cattivoesempio1}
 \end{figure}
 
-Dalla Figura \ref{fig:cattivoesempio1} già ad un primo impatto si può notare come le etichette assegnate alle issue ancora da risolvere siano poco esplicative e, a volte, ridondanti.\\
+Dalla Figura \ref{fig:cattivoesempio1} gi\'a ad un primo impatto si può notare come le etichette assegnate alle issue ancora da risolvere siano poco esplicative e, a volte, ridondanti.\\
 Questo crea molta confusione nel momento in cui lo sviluppatore che vuole dare il proprio contributo controlla cosa ci sia da fare e/o correggere, trovandosi davanti una miriade di labels con i colori più disparati e visualizzate in modo disorganizzato e con poca coerenza.
 
 \begin{figure}[H] 
@@ -177,7 +177,7 @@ A colori molto simili, talvolta identici tra loro, sono associate delle problema
 \label{fig:cattivoesempio3}
 \end{figure}
 
-Il problema si estende anche a \emph{Waffle} \footnote{\url{www.waffle.io}}, un tool che permette di gestire in modo pi\`u comodo ed immediato le issues di Github in tempo reale. Grazie a questo software direttamente collegato a Github non c'è la necessit\`a di controllare manualmente lo stato del lavoro, bensì il flusso del lavoro viene direttamente organizzato in base ai commit e alle issue a cui fanno riferimento.\\
+Il problema si estende anche a \emph{Waffle} \footnote{\url{www.waffle.io}}, un tool che permette di gestire in modo pi\`u comodo ed immediato le issues di Github in tempo reale. Grazie a questo software direttamente collegato a Github non c'\`e la necessit\`a di controllare manualmente lo stato del lavoro, bensì il flusso del lavoro viene direttamente organizzato in base ai commit e alle issue a cui fanno riferimento.\\
 Dalla Figura \ref{fig:cattivoesempio3} si evince che la visualizzazione del flusso di lavoro viene intaccato e reso di più difficile comprensione a causa della cattiva gestione delle labels. 
 \newpage
 
@@ -216,19 +216,19 @@ Dalla Figura \ref{fig:low_prototype2} \'e possibile vedere come abbiamo realizza
 
 \subsubsection{Analisi dei colori}
 Dopo aver utilizzato una struttura gerarchica per una visualizzazione più chiara ed intuitiva, abbiamo deciso di soffermarci anche sulla scelta dei \emph{colori} da assegnare alle etichette.\\
-Ogni colore, che sia primario oppure secondario, viene percepito da ogni utente in modo diverso e personale: esso è fortemente legato alla sua esperienza e alla sua cultura.\\
+Ogni colore, che sia primario oppure secondario, viene percepito da ogni utente in modo diverso e personale: esso \`e fortemente legato alla sua esperienza e alla sua cultura.\\
 Ad esempio, il colore \emph{rosso} nella cultura occidentale viene immediatamente e quasi inconsciamente associato ad un segnale di pericolo o ad un avvertimento che deve catturare l'attenzione. Nella cultura orientale, invece, simboleggia aspetti positivi della vita, come la fortuna e la gioia. Possiamo quindi capire come l'associazione colore-esperienza associata sia estremamente diversa in presenza di contesti sociali differenti \cite{thesis}.\\
-Secondo questo principio, lasciare all'utente la scelta del colore delle labels permetterebbe una maggiore flessibilità, ma al contempo si ricadrebbe nel problema descritto nel Paragrafo \ref{badexamples}.\\
+Secondo questo principio, lasciare all'utente la scelta del colore delle labels permetterebbe una maggiore flessibilit\'a, ma al contempo si ricadrebbe nel problema descritto nel Paragrafo \ref{badexamples}.\\
 Per risolvere questa problematica abbiamo deciso di optare per una palette di colori di default più ristretta.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.6\linewidth]{finale.png}}
-\caption{Prototipo ad alta fedeltà definitivo.}
+\caption{Prototipo ad alta fedelt\'a definitivo.}
 \label{fig:finale}
 \end{figure}
 
-Come si può vedere dalla Figura \ref{fig:finale}, la struttura al albero è ben visibile sin da subito; i colori per questo prototipo sono stati scelti pensando anche a come questi vengono visti da una persona daltonica \footnote{\url{http://www.visibone.com/color/chart2x.html}}.\\
-Dalla Figura \ref{fig:daltonici} \footnote{\url{http://www.colormatters.com/color-and-vision/what-is-color-blindness}} è possibile notare come alcuni colori ben distinguibili per soggetti normovisivi non lo sono affatto per chi sia affetto da una qualunque forma di daltonismo.
+Come si può vedere dalla Figura \ref{fig:finale}, la struttura al albero \`e ben visibile sin da subito; i colori per questo prototipo sono stati scelti pensando anche a come questi vengono visti da una persona daltonica \footnote{\url{http://www.visibone.com/color/chart2x.html}}.\\
+Dalla Figura \ref{fig:daltonici} \footnote{\url{http://www.colormatters.com/color-and-vision/what-is-color-blindness}} \`e possibile notare come alcuni colori ben distinguibili per soggetti normovisivi non lo sono affatto per chi sia affetto da una qualunque forma di daltonismo.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.45\linewidth]{paletteDaltonici.png}}
@@ -238,21 +238,18 @@ Dalla Figura \ref{fig:daltonici} \footnote{\url{http://www.colormatters.com/colo
 
 Alla luce di questo approfondimento, abbiamo optato per:
 \begin{itemize}
-\item il colore rosso per la categoria della difficoltà, perché possa essere immediatamente identificabile e risalti rispetto al resto della pagina (come detto nel Paragrafo \ref{motivi}, non conoscere la complessità delle issues è un grosso ostacolo alla partecipazione)
-\item un colore neutro come il grigio per indicare lo stato di un task, dal momento che è un'informazione utile per tenere d'occhio il flusso del lavoro, ma non così essenziale
-\item gli altri colori utilizzati sono stati semplicemente scelti in modo che possano essere distinguibili da chiunque, in modo da non sacrificare in nessun modo l'accessibilità della piattaforma 
+\item il colore rosso per la categoria della difficolt\'a, perch\`e possa essere immediatamente identificabile e risalti rispetto al resto della pagina (come detto nel Paragrafo \ref{motivi}, non conoscere la complessit\'a delle issues \`e un grosso ostacolo alla partecipazione)
+\item un colore neutro come il grigio per indicare lo stato di un task, dal momento che \`e un'informazione utile per tenere d'occhio il flusso del lavoro, ma non così essenziale
+\item gli altri colori utilizzati sono stati semplicemente scelti in modo che possano essere distinguibili da chiunque, in modo da non sacrificare in nessun modo l'accessibilit\'a della piattaforma 
 \end{itemize}
-L'idea di limitare la scelta di colori durante la creazione delle labels sacrifica la libertà dell'utente a favore di una interfaccia più accessibile e ben organizzata. Al tempo stesso la nostra implementazione fornisce gli strumenti necessari per gestire in modo consono le etichette: ciò non significa che questo impedisca all'utilizzatore di configurare i colori come meglio creda.
+L'idea di limitare la scelta di colori durante la creazione delle labels sacrifica la libert\'a dell'utente a favore di una interfaccia più accessibile e ben organizzata. Al tempo stesso la nostra implementazione fornisce gli strumenti necessari per gestire in modo consono le etichette: ciò non significa che questo impedisca all'utilizzatore di configurare i colori come meglio creda.
 
 \newpage
 \section{Considerazioni Finali}
 
 \subsection{Strumenti}
-Dalla analisi delle risposte dateci dagli intervistati e dalla nostra esperienza possiamo affermare che la difficolt\`a nella contribuzione a progetti open source \'e causata dai strumenti per la gestione di pregetti per team:
-Non abbiamo infatti trovato signifacatifi impedimenti nella struttura del progetto di NeoVim, ma bensi in GitHub.
-Vogliasi notare che GitHub \'e considerato lo stato dell'arte, ne \'e dimostrazione lampate il fatto che anche team di sviluppo di Google, eg. GoLang \footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}, anzich\'e utilizzare i loro strumenti interni, code.google.com \footnote{\url{https://code.google.com/}}, 
-
-
+Dalla analisi delle risposte dateci dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\'a nella contribuzione a progetti open source \'e causata dai strumenti per la gestione di pregetti per team: non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim, bensì nella piattaforma di GitHub.\\
+GitHub \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo di Google (eg GoLang \footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}) lo abbia preferito all'utilizzo di strumenti interni come Google Code \footnote{\url{https://code.google.com/}} la dice lunga.
 
 % bibliography ditry hack
 \cite{*}
