@@ -333,8 +333,8 @@ li.cat.c_e .label.label-link {background-color: #2654bf; color: #eee;}
                   <div class="table-list-header">
                     <div class="table-list-filters">
                       <div class="table-list-header-toggle left">
-                        <span class="table-list-header-meta">
-                          54 labels
+                        <span id="clabels" class="table-list-header-meta">
+                          <!-- 54 labels -->
                         </span>
                       </div>
                       <div class="table-list-header-toggle right">
@@ -376,7 +376,7 @@ li.cat.c_e .label.label-link {background-color: #2654bf; color: #eee;}
                   </div>
 
                   <!-- LABEL LIST -->
-                  <ul class="table-list table-list-bordered">
+                  <ul id="lblls" class="table-list table-list-bordered">
 
                     <!-- cat -->
                     <li class="table-list-item labels-list-item js-details-container cat c_a">
@@ -858,6 +858,9 @@ li.cat.c_e .label.label-link {background-color: #2654bf; color: #eee;}
             $(e).addClass('single');
           }
         });
+
+        /* Update categories */
+        $('#clabels').html($('#lblls').children('li').length + ' categories');
 
         /* Toggle ev */
         $('.toggler').click(function(e){
