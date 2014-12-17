@@ -8,6 +8,8 @@
 *.acr
 *.alg
 *.bbl
+*.bcf
+*.blg
 *.blg
 *.dvi
 *.glg
@@ -16,6 +18,8 @@
 *.ind
 *.lof
 *.lot
+*.log
+*.xml
 *.maf
 *.mtc
 *.mtc1
