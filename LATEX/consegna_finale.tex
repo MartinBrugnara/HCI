@@ -71,11 +71,7 @@ Essa prevedeva delle domande mirate principalmente a capire:
 \item cosa significhi \emph{partecipare} ad un progetto open source
 \end{itemize}
 \subsection{Analisi dei risultati}
-%-------
-% inserire numeri di intervistati
-%-------
-
-Il campione su cui \'e stata effettuata l'intervista non \'e molto eterogeneo (come \'e possibile vedere dalla Figura \ref{fig:distribuzione}, dal momento che \'e stato pi\'u immediato intervistare delle persone all'interno del nostro corso di laurea piuttosto che di altri atenei o dei lavoratori.
+Il campione oggetto dell'intervista si compone di 12 persone. Esso non è molto eterogeneo, come \'e possibile notare in Figura \ref{fig:distribuzione}; \'e stato pi\'u immediato intervistare delle persone all'interno del nostro corso di laurea piuttosto che di altri atenei o dei lavoratori.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.8\linewidth]{interviewed_distribution.png}}
@@ -213,17 +209,32 @@ Dopo aver discusso durante l'ultimo workshop con componenti di altri gruppi e av
 Dalla Figura \ref{fig:low_prototype2} \'e possibile vedere come abbiamo realizzato il nostro prototipo a bassa fedelt\`a conclusivo.
 
 \subsection{Prototipo ad alta fedelt\'a}
+Abbiamo optato per l'implementazione del prototipo ad alta fedeltà piuttosto che utilizzare dei tool che simulassero l'interattività con lo stesso per ottenere tutte le funzionalità a cui puntavamo, senza penalizzare il \emph{look and feel} del prodotto finale \cite[p.~263]{InteractionDesign}.\\
+Ciò ci permette di avere un elaborato il più possibile interattivo \footnote{Non avendo alcun accesso alla parte di backend della piattaforma ma solamente alla parte di frontend, non ci è stato possibile renderlo completamente funzionante (eg. funzionalità di aggiunta etichette, modifica label \dots)} che delinea con chiarezza il nostro obiettivo.\\
+Dopo aver ricevuto alcuni feedback sul prototipo a bassa fedeltà durante un workshop, abbiamo deciso di utilizzare le seguenti convenzioni:
+\begin{itemize}
+\item un \textbf{triangolo vuoto} contrassegna una macro-area espandibile
+\item un'\textbf{etichetta} simboleggia una label annidata all'interno di una macro-area
+\item un \textbf{diamante} indica una macro-area non ulteriormente espandibile (una categoria attualmente senza labels al suo interno)
+\end{itemize}
+Per permettere la gestione delle labels, sono stati aggiunti i bottoni \emph{new category} e \emph{add}, che permettono rispettivamente di aggiungere una macro-area alla lista ed una label annidata all'interno della categoria su cui si preme.
+
+\begin{figure}[H] 
+\center{\includegraphics[width=0.55\linewidth]{dopo.png}}
+\caption{Prototipo ad alta fedeltà definitivo.}
+\label{fig:dopo}
+\end{figure}
 
 \subsubsection{Analisi dei colori}
 Dopo aver utilizzato una struttura gerarchica per una visualizzazione più chiara ed intuitiva, abbiamo deciso di soffermarci anche sulla scelta dei \emph{colori} da assegnare alle etichette.\\
 Ogni colore, che sia primario oppure secondario, viene percepito da ogni utente in modo diverso e personale: esso \`e fortemente legato alla sua esperienza e alla sua cultura.\\
-Ad esempio, il colore \emph{rosso} nella cultura occidentale viene immediatamente e quasi inconsciamente associato ad un segnale di pericolo o ad un avvertimento che deve catturare l'attenzione. Nella cultura orientale, invece, simboleggia aspetti positivi della vita, come la fortuna e la gioia. Possiamo quindi capire come l'associazione colore-esperienza associata sia estremamente diversa in presenza di contesti sociali differenti \cite{thesis}.\\
+Ad esempio, il colore \emph{rosso} nella cultura occidentale viene immediatamente e quasi inconsciamente associato ad un segnale di pericolo o ad un avvertimento che deve catturare l'attenzione. Nella cultura orientale, invece, simboleggia aspetti positivi della vita, come la fortuna e la gioia. Possiamo quindi capire come l'associazione colore-esperienza associata sia estremamente diversa in presenza di contesti sociali differenti \cite[p.~9-12]{thesis}.\\
 Secondo questo principio, lasciare all'utente la scelta del colore delle labels permetterebbe una maggiore flessibilit\'a, ma al contempo si ricadrebbe nel problema descritto nel Paragrafo \ref{badexamples}.\\
 Per risolvere questa problematica abbiamo deciso di optare per una palette di colori di default più ristretta.
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.6\linewidth]{finale.png}}
-\caption{Prototipo ad alta fedelt\'a definitivo.}
+\caption{Utilizzo e scelta dei colori delle labels.}
 \label{fig:finale}
 \end{figure}
 
@@ -245,7 +256,7 @@ Alla luce di questo approfondimento, abbiamo optato per:
 L'idea di limitare la scelta di colori durante la creazione delle labels sacrifica la libert\'a dell'utente a favore di una interfaccia più accessibile e ben organizzata. Al tempo stesso la nostra implementazione fornisce gli strumenti necessari per gestire in modo consono le etichette: ciò non significa che questo impedisca all'utilizzatore di configurare i colori come meglio creda.
 
 \newpage
-\section{Considerazioni Finali}
+\section{Considerazioni finali}
 
 \subsection{Strumenti}
 Dalla analisi delle risposte dateci dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\'a nella contribuzione a progetti open source \'e causata dai strumenti per la gestione di pregetti per team: non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim, bensì nella piattaforma di GitHub.\\
@@ -260,8 +271,13 @@ GitHub \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo
 
 \end{document}
 
-%----------------
-% miglioramenti: 
+%--------------------------------------------------------------------------------------------------------------------------------
+%
+% TODO: 
 %				campione pi\'u eterogeneo e pi\'u vasto per le interviste
-%---------------
-
+%				far vedere ciclo (re)design - evaluation
+%				valutazione del prototipo finale (autocritica + intervista a Fabio)
+%				dove avremmo potuto fare meglio
+%				abbiamo sacrificato leggermente l'intuitività della label per benefici a "lungo termine"
+%
+%-------------------------------------------------------------------------------------------------------------------------------
