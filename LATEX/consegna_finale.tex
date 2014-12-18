@@ -57,7 +57,11 @@ Il nostro interesse \'e ricaduto proprio in queste problematiche che affliggono 
 Questo approfondimento deriva in parte anche dalla nostra propensione ed interesse per l'utilizzo di software open source durante la nostra carriera universitaria e lavorativa.\\
 Lo scopo finale \'e quello di trovare e formulare una possibile soluzione al problema della gestione delle etichette su Github (la piattaforma principe per lo sviluppo open source), dal momento che essa \'e attualmente molto confusionaria e poco ben gestita, soprattutto in progetti di una certa complessit\'a e grandezza.\\
 \vfill
-Tutto il materiale ed i sorgenti di questo progetto si possono trovare su \center\textbf{\url{https://github.com/MartinBrugnara/HCI}}.
+\begin{center}
+Tutto il materiale, i prototipi, i sorgenti di questo progetto ed un video di demo si possono trovare nel repository su Githuib al seguente link:\\
+\textbf{\url{https://github.com/MartinBrugnara/HCI}}
+\end{center}
+
 \newpage
 
 \section{Interviste}
@@ -261,6 +265,8 @@ L'idea di limitare la scelta di colori durante la creazione delle labels sacrifi
 \section{Considerazioni finali}
 
 \subsection{Confronto con l'attuale implementazione}
+Nella Figura \ref{fig:confronto} si evince quanto la struttura da noi proposta aumenti l'usabilità del prodotto anziché fuorviare l'utente. Per fare ciò, abbiamo sacrificato leggermente l'intuitività nell'immediato (eg. quando si deve aggiungere una label annidata) per aumentare la produttività sul lungo periodo ed una drastica diminuzione del tempo impiegato per decifrare il reale significato delle labels.\\
+Si noti come alcuni progetti, tra cui Neovim stesso, tenti di simulare questa struttura gerarchica componendo i nomi (eg. platform:cgwin, platform:freebsd, come da Figura \ref{fig:cattivoesempio2}).
 
 \begin{figure}[H] 
 \center{\includegraphics[width=0.8\linewidth]{confronto.png}}
@@ -268,12 +274,20 @@ L'idea di limitare la scelta di colori durante la creazione delle labels sacrifi
 \label{fig:confronto}
 \end{figure}
 
-\subsection{Strumenti}
-Dalla analisi delle risposte dateci dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\'a nella contribuzione a progetti open source \'e causata dai strumenti per la gestione di pregetti per team: non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim, bensì nella piattaforma di GitHub.\\
-GitHub \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo di Google (eg GoLang \footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}) lo abbia preferito all'utilizzo di strumenti interni come Google Code \footnote{\url{https://code.google.com/}} la dice lunga.
+Seguendo il metodo iterativo di \emph{(re)design-evaluation} che è possibile vedere in Figura \ref{fig:ciclo}, abbiamo ottenuto un prototipo finale che è frutto di step incrementali, permettendoci così di sfruttare non solo la nostra esperienza e capacità critica ma anche quella di terzi.
 
-% bibliography ditry hack
-\cite{*}
+\begin{figure}[H] 
+\center{\includegraphics[width=0.45\linewidth]{cycle.png}}
+\caption{Processo di design con iterazioni.}
+\label{fig:ciclo}
+\end{figure}
+
+\subsection{Conclusione}
+Dalla analisi delle risposte dateci dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\'a nel contribuire a progetti open source sia causata dagli strumenti per la gestione dei pregetti a disposizione dei team di sviluppo. Non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim, bensì nella piattaforma di GitHub.\\
+Esso \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo di Google (eg. GoLang \footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}) lo abbia preferito all'utilizzo di strumenti interni (come Google Code \footnote{\url{https://code.google.com/}}) la dice lunga.
+
+%bibliography ditry hack
+%\cite{*}
 
 \newpage
 \bibliographystyle{unsrt}
@@ -285,10 +299,6 @@ GitHub \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo
 %
 % TODO: 
 %				campione pi\'u eterogeneo e pi\'u vasto per le interviste
-%				far vedere ciclo (re)design - evaluation
-%				valutazione del prototipo finale (autocritica + intervista a Fabio)
 %				dove avremmo potuto fare meglio
-%				abbiamo sacrificato leggermente l'intuitività della label per benefici a "lungo termine"
-%				link ai prototipi interattivi su github
 %
 %-------------------------------------------------------------------------------------------------------------------------------
