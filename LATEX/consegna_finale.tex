@@ -263,7 +263,8 @@ L'idea di limitare la scelta di colori durante la creazione delle labels sacrifi
 
 \newpage
 \section{Considerazioni finali}
-
+Dopo aver investito molto tempo in questo progetto ed aver accresciuto le nostre competenze, potrebbe risultare complicato valutare in modo distaccato il lavoro da noi svolto.\\
+I paragrafi seguenti si prefiggono l'obiettivo di trarre pi\'u valide ed oggettive conclusioni.
 \subsection{Confronto con l'attuale implementazione}
 Nella Figura \ref{fig:confronto} si evince quanto la struttura da noi proposta aumenti l'usabilità del prodotto anziché fuorviare l'utente. Per fare ciò, abbiamo sacrificato leggermente l'intuitività nell'immediato (eg. quando si deve aggiungere una label annidata) per aumentare la produttività sul lungo periodo ed una drastica diminuzione del tempo impiegato per decifrare il reale significato delle labels.\\
 Si noti come alcuni progetti, tra cui Neovim stesso, tenti di simulare questa struttura gerarchica componendo i nomi (eg. platform:cgwin, platform:freebsd, come da Figura \ref{fig:cattivoesempio2}).
@@ -283,8 +284,15 @@ Seguendo il metodo iterativo di \emph{(re)design-evaluation} che è possibile ve
 \end{figure}
 
 \subsection{Conclusione}
-Dalla analisi delle risposte dateci dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\'a nel contribuire a progetti open source sia causata dagli strumenti per la gestione dei pregetti a disposizione dei team di sviluppo. Non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim, bensì nella piattaforma di GitHub.\\
-Esso \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo di Google (eg. GoLang \footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}) lo abbia preferito all'utilizzo di strumenti interni (come Google Code \footnote{\url{https://code.google.com/}}) la dice lunga.
+Dalla analisi delle risposte fornite dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\'a nel contribuire a progetti open source sia causata dagli strumenti per la gestione dei pregetti a disposizione dei team di sviluppo. Non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim, bens\'i nella piattaforma di GitHub.\\
+Esso \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo di Google (eg. GoLang \footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}) lo abbia preferito all'utilizzo di strumenti interni (come Google Code \footnote{\url{https://code.google.com/}}) ne \'e un'ulteriore dimostrazione.\\
+Al termine di questo progetto ci samo resi conto che svolgerne in modo differente e pi\'u approfondito alcune parti avrebbe potuto portare a risultati pi\'u significativi.\\
+Senza dubbio intervistare un maggior numero di persone, in particolare pi\'u sviluppatori, avrebbe potuto rendere pi\'u concreta la raccolta dei dati e dei requisiti, permettendoci in questo modo di delineare una \emph{personas} pi\'u accurata e di individuare ulteriori problematiche che potrebbero essere sfuggite alla nostra analisi.\\
+I problemi principali che possono essere risolti tramite un redisign dell'interfaccia grafica (UI) sono quelli che trattengono gli utenti pi\'u esperti dal collaborare. Bisogna comunque tenere presente che risulta poco verosimile pensare di poter conivolgere persone senza un certo tipo di competenze ed \`e difficile coinvolgere nello sviluppo di un progetto open source altre che non lo vogliono fare per motivi ideologici.\\
+Infine, date le tempistiche relativamente brevi, non \'e stato possibile entrare pi\'u nello specifico per quanto riguarda l'associazione dei colori alle labels e l'accessibilit\'a degli stessi per individui affetti da daltonismo.\\
+%-------------------------------
+% manca qualcosa qui
+% ------------------------------
 
 %bibliography ditry hack
 %\cite{*}
@@ -294,11 +302,3 @@ Esso \'e considerato lo stato dell'arte ed il fatto che anche team di sviluppo d
 \bibliography{consegna_finale}
 
 \end{document}
-
-%--------------------------------------------------------------------------------------------------------------------------------
-%
-% TODO: 
-%				campione pi\'u eterogeneo e pi\'u vasto per le interviste
-%				dove avremmo potuto fare meglio
-%
-%-------------------------------------------------------------------------------------------------------------------------------
