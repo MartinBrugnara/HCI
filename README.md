@@ -3,8 +3,6 @@ HCI
 
 HCI final assignement 2014/15
 
-===
-
 Contents:
 * BALSAMIQ: low level prototypes
 * HTML: high level prototype (implemented, open labels.html)
