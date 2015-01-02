@@ -116,7 +116,7 @@ Al contrario, essi non vengono largamente utilizzati a causa della ridotta conos
 
 \subsection{Contribuire ad un progetto}
 \label{motivi}
-Dalle interviste \`e emerso che il significato attribuito al termine \emph{contribuire} \`e, quasi all'unanimit\`a, quello di mettere a disposizione le proprie competenze per il miglioramento di un software e/o la risoluzione di eventuali problemi legati ad ad esso.\\
+Dalle interviste \`e emerso che il significato attribuito al termine \emph{contribuire} \`e, quasi all'unanimit\`a, quello di mettere a disposizione le proprie competenze per il miglioramento di un software e/o la risoluzione di eventuali problemi legati ad esso.\\
 Le motivazioni che possono spingere a contribuire sono molte: dalla semplice soddisfazione per aver risolto un bug, all'arricchimento personale e l'esperienza acquisita che ne consegue, passando per la necessit\`a di dover implementare una funzionalit\`a che risolva un problema che ci si trova a fronteggiare durante il proprio lavoro.\\
 Al contrario, altrettanti sono i motivi che portano le persone a non contribuire, tra i quali la mancanza di tempo e di competenze, ma soprattutto la \emph{qualit\`a} e disponibilit\`a delle \emph{informazioni} riguardanti un progetto.\\
 Quest'ultimo a nostro avviso risulta essere il pi\`u rilevante, dal momento che un utente (con delle capacit\`a per farlo) si trova a non poter contribuire a causa della mancanza di linee guida su come farlo. Ci\`o potrebbe sembrare banale a primo impatto, ma \`e una costante in molti dei progetti presi in considerazione.
@@ -124,7 +124,7 @@ Quest'ultimo a nostro avviso risulta essere il pi\`u rilevante, dal momento che 
 \newpage
 
 \section{Design library: NeoVim}
-Nella nostra \emph{design library} ci siamo concentrati sul progetto di NeoVim per poter individuare sia degli esempi di buona e che di cattiva progettazione da cui prendere spunto.\\
+Nella nostra \emph{design library} ci siamo concentrati sul progetto di NeoVim per poter individuare sia degli esempi di buona che di cattiva progettazione da cui prendere spunto.\\
 
 \subsection{Buoni esempi}
 Facciamo ora una lista degli esempi pi\`u significativi di un design pensato e studiato appositamente per far s\`\i\ che l'utente interessato a partecipare riesca a farlo nel modo migliore possibile.\\
@@ -153,7 +153,7 @@ Ci\`o \`e stato parzialmente risolto (Figura~\ref{fig:buonesempio2}) introducend
 \label{fig:buonesempio3}
 \end{figure}
 
-Infine, viene posta molta cura nella documentazione e nei commenti all'interno del codice. Ci\`o aiuta chi interviene in quella porzione di sorgente per poter capire meglio e senza eccessiva difficolt\`a cosa faccia una certa porzione di codice.\\
+Infine, viene posta molta cura nella documentazione e nei commenti all'interno del codice. Ci\`o aiuta chi interviene in quella porzione di sorgente a poter capire meglio e senza eccessiva difficolt\`a cosa faccia una certa porzione di codice.\\
 Inoltre, alla nascita di NeoVim, sono state decise delle linee guida ben precise su come si dovesse indentare/organizzare il codice e soprattutto su come commentarlo, in modo da non creare disomogeneit\`a all'interno del progetto (il che creerebbe non pochi problemi di comprensione).\\
 
 \subsection{Cattivi esempi}
@@ -167,7 +167,7 @@ Allo stesso tempo abbiamo individuato delle parti che risultavano poco intuitive
 \end{figure}
 
 Dalla Figura~\ref{fig:cattivoesempio1} gi\`a ad un primo impatto si pu\`o notare come le etichette assegnate alle issue ancora da risolvere siano poco esplicative e, a volte, ridondanti.\\
-Questa situazione crea molta confusione nel momento in cui lo sviluppatore vuole dare il proprio contributo e, controllando cosa ci sia da fare e/o correggere, si trova davanti una miriade di labels con i colori pi\`u disparati e visualizzate in modo disorganizzato e poco coerente.
+Questa situazione crea molta confusione nel momento in cui lo sviluppatore vuole dare il proprio contributo e, controllando cosa ci sia da fare e/o correggere, si trova davanti ad una miriade di labels con i colori pi\`u disparati e visualizzate in modo disorganizzato e poco coerente.
 
 \begin{figure}[H]
 \center{\includegraphics[width=0.4\linewidth]{cattivoesempio2.png}}
@@ -185,7 +185,7 @@ A colori molto simili e talvolta identici sono associate delle problematiche e d
 \end{figure}
 
 Il problema si estende anche a \emph{Waffle}\footnote{\url{www.waffle.io}}, un tool che permette di gestire in modo pi\'u comodo ed immediato le issues di Github in tempo reale. Grazie a questo software direttamente collegato a Github non c'\'e la necessit\`a di controllare manualmente lo stato attuale del lavoro, bens\`\i\ viene organizzato automaticamente in base ai commit e alle issue a cui fanno riferimento.\\
-Dalla Figura~\ref{fig:cattivoesempio3} si evince che la visualizzazione del flusso di lavoro viene intaccata e resa di pi\`u difficile comprensione a causa della cattiva gestione delle labels.
+Dalla Figura~\ref{fig:cattivoesempio3} si evince che la visualizzazione del flusso di lavoro viene intaccata e resa di difficile comprensione a causa della cattiva gestione delle labels.
 
 \newpage
 
@@ -210,7 +210,7 @@ A seguito della discussione con componenti di altri gruppi durante l'ultimo work
 \begin{itemize}
 \item un \textbf{triangolo pieno} indica una macro-area che \`e possibile espandere (ovvero che contiene ulteriori labels).
 \item un \textbf{triangolo vuoto} indica una macro-area che \emph{non} contiene nulla al suo interno; questo concetto pu\`o ripetersi sia al livello della macro-area che a quello delle labels annidate in una categoria pi\`u grande (Figura~\ref{fig:low_prototype}).
-\item la scelta di una struttura \textbf{gerarchica} \`e nata dal fatto che chiunque abbia usato prima un gestore di file su un computer ha chiara l'idea di cartella, tramite la quale \`e possibile organizzare i propri dati in modo coerente. Questo ci permette di utilizzare un concetto non nuovo in un contesto diverso dal quale l'utente si aspetta di trovarlo, rendendo l'utilizzo della nostra funzionalit\`a ragionevolmente immediato.
+\item la scelta di una struttura \textbf{gerarchica} \`e nata dal fatto che chiunque abbia usato un gestore di file su un computer ha chiara l'idea di cartella, tramite la quale \`e possibile organizzare i propri dati in modo coerente. Questo ci permette di utilizzare un concetto non nuovo in un contesto diverso dal quale l'utente si aspetta di trovarlo, rendendo l'utilizzo della nostra funzionalit\`a ragionevolmente immediato.
 \end{itemize}
 
 \begin{figure}[H]
@@ -222,7 +222,7 @@ A seguito della discussione con componenti di altri gruppi durante l'ultimo work
 Dalla Figura~\ref{fig:low_prototype2} \`e possibile vedere come abbiamo realizzato il nostro prototipo a bassa fedelt\`a conclusivo.\\
 
 \subsection{Prototipo ad alta fedelt\`a}
-Abbiamo optato per l'\emph{implementazione} del prototipo ad alta fedelt\`a piuttosto che utilizzare dei tool che simulassero l'interattivit\`a con lo stesso per ottenere tutte le funzionalit\`a a cui puntavamo, senza penalizzare il \emph{look and feel} del prodotto finale~\cite[p.~263]{InteractionDesign}.\\
+Abbiamo optato per l'\emph{implementazione} del prototipo ad alta fedelt\`a piuttosto che utilizzare dei tool che simulassero l'interattivit\`a per ottenere tutte le funzionalit\`a a cui puntavamo, senza penalizzare il \emph{look and feel} del prodotto finale~\cite[p.~263]{InteractionDesign}.\\
 Ci\`o ci permette di avere un elaborato il pi\`u possibile interattivo\footnote{Non avendo alcun accesso alla parte di backend della piattaforma ma solamente alla parte di frontend, non ci \`e stato possibile renderlo completamente funzionante (eg.\ funzionalit\`a di aggiunta etichette, modifica label \dots)} che delinea con chiarezza il nostro obiettivo.\\
 Dopo aver ricevuto alcuni feedback sul prototipo da parte di alcuni amici, abbiamo deciso di utilizzare le seguenti convenzioni:
 \begin{itemize}
@@ -264,7 +264,7 @@ Alla luce di questo approfondimento, abbiamo optato per:
 \begin{itemize}
 \item il colore rosso per la categoria della difficolt\`a, perch\'e possa essere immediatamente identificabile e risalti rispetto al resto della pagina (come detto nel Paragrafo\ref{motivi}, non conoscere la complessit\`a delle issues \'e un grosso ostacolo alla partecipazione).
 \item un colore neutro come il grigio per indicare lo stato di un task, dal momento che \'e un'informazione utile per tenere sotto controllo il flusso del lavoro, ma non risulta cos\`\i\ essenziale.
-\item gli altri colori utilizzati sono stati scelti in modo che possano essere distinguibili da chiunque, in modo da non sacrificare in nessun modo l'accessibilit\`a della piattaforma.
+\item gli altri colori utilizzati sono stati scelti in modo che possano essere distinguibili da chiunque, in modo da non sacrificare l'accessibilit\`a della piattaforma.
 \end{itemize}
 L'idea di limitare la scelta di colori durante la creazione delle labels sacrifica la libert\`a dell'utente a favore di una interfaccia pi\`u accessibile e ben organizzata. Al tempo stesso la nostra implementazione fornisce gli strumenti necessari per gestire in modo consono le etichette: ci\`o non significa che la nostra implementazione impedisca all'utente finale di configurare i colori come meglio creda.
 
@@ -272,7 +272,7 @@ L'idea di limitare la scelta di colori durante la creazione delle labels sacrifi
 
 \section{Considerazioni finali}
 Dopo aver investito molto tempo in questo progetto ed aver accresciuto le nostre competenze, potrebbe risultare complicato valutare in modo distaccato il lavoro da noi svolto.\\
-I paragrafi seguenti si prefiggono l'obiettivo di trarre pi\`u valide ed oggettive conclusioni.
+I paragrafi seguenti si prefiggono l'obiettivo di trarre delle valide ed oggettive conclusioni.
 
 \subsection{Confronto con l'attuale implementazione}
 Nella Figura~\ref{fig:confronto} si evince quanto la struttura da noi proposta aumenti l'usabilit\`a del prodotto anzich\'e fuorviare l'utente. Per fare ci\`o abbiamo sacrificato leggermente l'intuitivit\`a nell'immediato (eg.\ quando si deve aggiungere una label annidata) per aumentare la produttivit\`a sul lungo periodo. Questo comporta una drastica diminuzione del tempo impiegato per decifrare il reale significato delle labels.\\
@@ -293,12 +293,12 @@ Seguendo il metodo iterativo di \emph{(re) design-evaluation} che \`e possibile 
 \end{figure}
 
 \subsection{Conclusione}
-Dall'analisi delle risposte fornite dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\`a nel contribuire a progetti open source sia causata dagli strumenti per la gestione dei pregetti a disposizione dei team di sviluppo. Non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim, bens\`\i\ nella piattaforma di GitHub.\\
+Dall'analisi delle risposte fornite dagli intervistati e dalla nostra esperienza possiamo affermare che la principale difficolt\`a nel contribuire a progetti open source sia causata dagli strumenti per la gestione dei pregetti a disposizione dei team di sviluppo. Ipotesi confermata dal nostro studio, infatti non abbiamo trovato significativi impedimenti nella struttura del progetto di NeoVim in s\`e e per s\`e.\\
 % #dash is right (shut up please syntastic).
-Esso \`e considerato lo stato dell'arte ed il fatto che anche team di sviluppo di Google (eg.\ GoLang\footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}) lo abbia preferito all'utilizzo di strumenti interni (come Google Code\footnote{\url{https://code.google.com/}}) ne \'e un'ulteriore dimostrazione.\\
+Nonostante ci\`o, GitHub \`e considerato lo stato dell'arte, ed il fatto che anche il team di sviluppo di GoLang, progetto Google, (eg.\ GoLang\footnote{\url{https://groups.google.com/forum/#!topic/golang-dev/sckirqOWepg\%5B1-25-false\%5D}}) lo abbia preferito all'utilizzo di strumenti interni (Google Code\footnote{\url{https://code.google.com/}}) ne \'e un'ulteriore dimostrazione.\\
 Al termine di questo progetto ci samo resi conto che svolgerne in modo differente e pi\`u approfondito alcune parti avrebbe potuto portare a risultati pi\`u significativi.\\
 Senza dubbio intervistare un maggior numero di persone, in particolare pi\`u sviluppatori, avrebbe potuto rendere maggiormente concreta la raccolta dei dati e dei requisiti, permettendoci in questo modo di delineare una \emph{personas} pi\`u accurata e di individuare ulteriori problematiche che potrebbero essere sfuggite alla nostra analisi.\\
-I problemi principali che possono essere risolti tramite un redisign dell'interfaccia grafica (UI) sono quelli che trattengono gli utenti pi\`u esperti dal collaborare. Bisogna comunque tenere presente che risulta poco verosimile pensare di poter conivolgere persone senza un certo tipo di competenze ed \'e difficile avvicinare allo sviluppo di un progetto open source altre che non lo vogliono fare per motivi ideologici.\\
+I problemi principali che possono essere risolti tramite un redisign dell'interfaccia grafica (UI) sono quelli che trattengono gli utenti pi\`u esperti dal collaborare. Bisogna comunque tenere presente che risulta poco verosimile pensare di poter conivolgere persone senza un certo tipo di competenze ed \'e difficile avvicinare allo sviluppo di un progetto open source coloro che non vogliono per motivi ideologici.\\
 Infine, date le tempistiche relativamente brevi, non \'e stato possibile entrare pi\`u nel dettaglio per quanto riguarda l'associazione dei colori alle labels e la relativa accessibilit\`a per individui affetti da daltonismo.
 
 %bibliography: dev dirty hack
